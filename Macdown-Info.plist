@@ -4,12 +4,34 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
+	<key>CFBundleDocumentTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeExtensions</key>
+			<array>
+				<string>md</string>
+				<string>markdown</string>
+			</array>
+			<key>CFBundleTypeIconFile</key>
+			<string>MarkdownLiveApp.icns</string>
+			<key>CFBundleTypeName</key>
+			<string>MarkdownFile</string>
+			<key>CFBundleTypeOSTypes</key>
+			<array>
+				<string>????</string>
+			</array>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>NSDocumentClass</key>
+			<string>MyDocument</string>
+		</dict>
+	</array>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string></string>
+	<string>MarkdownLiveApp.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.thoughtfultree.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>org.degutis.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -18,27 +40,15 @@
 	<string>APPL</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
-	<key>CFBundleShortVersionString</key>
-	<string>0.1</string>
 	<key>CFBundleVersion</key>
-	<string>0.1</string>
-	<key>CFBundleGetInfoString</key>
-	<string>Version 0.1, Copyright 2009 © Thoughtful Tree Software, Inc.</string>
+	<string>1</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
-	<key>LSMinimumSystemVersion</key>
-	<string>${MACOSX_DEPLOYMENT_TARGET}</string>
-	<key>NSHumanReadableCopyright</key>
-	<string>Copyright 2009 © Thoughtful Tree Software, Inc.</string>
-	<key>SUEnableSystemProfiling</key>
-	<true/>
-	<key>SUFeedURL</key>
-	<string>http://www.thoughtfultree.com/appcasts/${PRODUCT_NAME:identifier}.php</string>
-	<key>SUPublicDSAKeyFile</key>
-	<string>sparkle_public_key.pem</string>
-	<key>SDSubmitFeedbackURL</key>
-	<string>http://www.thoughtfultree.com/_submitfeedback.php</string>
 </dict>
 </plist>
