@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		256AC3DA0F4B6AC300CF3369 /* MacdownAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* MacdownAppDelegate.m */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		946F1C25105C8542005C1ADC /* SDWordCountValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 946F1C24105C8542005C1ADC /* SDWordCountValueTransformer.m */; };
+		946F1C2D105C8755005C1ADC /* Markdown.pl in Resources */ = {isa = PBXBuildFile; fileRef = 946F1C2C105C8755005C1ADC /* Markdown.pl */; };
+		946F1C51105C8CA3005C1ADC /* Context.html in Resources */ = {isa = PBXBuildFile; fileRef = 946F1C50105C8CA3005C1ADC /* Context.html */; };
+		946F1CF6105C9122005C1ADC /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946F1CF5105C9122005C1ADC /* WebKit.framework */; };
+		946F1D7A105C94DF005C1ADC /* SDPreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 946F1D79105C94DF005C1ADC /* SDPreferencesController.m */; };
+		946F1DD9105C969B005C1ADC /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946F1DD8105C969B005C1ADC /* Sparkle.framework */; };
+		946F1E71105C99C2005C1ADC /* NSApplication+AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 946F1E60105C99C2005C1ADC /* NSApplication+AppInfo.m */; };
+		946F1E72105C99C2005C1ADC /* NSArray+UsefulStuff.m in Sources */ = {isa = PBXBuildFile; fileRef = 946F1E62105C99C2005C1ADC /* NSArray+UsefulStuff.m */; };
+		946F1E73105C99C2005C1ADC /* NSWindow+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 946F1E64105C99C2005C1ADC /* NSWindow+Geometry.m */; };
+		946F1E74105C99C2005C1ADC /* SDCommonAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 946F1E66105C99C2005C1ADC /* SDCommonAppDelegate.m */; };
+		946F1E75105C99C2005C1ADC /* SDDelayProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 946F1E69105C99C2005C1ADC /* SDDelayProxy.m */; };
+		946F1E76105C99C2005C1ADC /* SDFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 946F1E6B105C99C2005C1ADC /* SDFoundation.m */; };
+		946F1E77105C99C2005C1ADC /* SDInsetTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 946F1E6D105C99C2005C1ADC /* SDInsetTextField.m */; };
+		946F1EB6105C9B04005C1ADC /* SDOldFashionedContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 946F1EB5105C9B04005C1ADC /* SDOldFashionedContentView.m */; };
+		946F1EBC105C9B25005C1ADC /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 946F1DD8105C969B005C1ADC /* Sparkle.framework */; };
+		94AED82410496AA100574BCA /* SDMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AED82310496AA100574BCA /* SDMainWindowController.m */; };
+		94AED83110496BD900574BCA /* SDGeneralPrefPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 94AED83010496BD900574BCA /* SDGeneralPrefPane.m */; };
+		94AED83810496C1E00574BCA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58150DA1D0A300B32029 /* MainMenu.xib */; };
+		94AED84A10496D6C00574BCA /* GeneralPrefPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94AED84810496D6C00574BCA /* GeneralPrefPane.xib */; };
+		94AED84B10496D6C00574BCA /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94AED84910496D6C00574BCA /* MainWindow.xib */; };
+		94AED85310496DA500574BCA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 94AED85010496DA500574BCA /* Credits.rtf */; };
+		94AED85410496DA500574BCA /* DefaultValues.plist in Resources */ = {isa = PBXBuildFile; fileRef = 94AED85110496DA500574BCA /* DefaultValues.plist */; };
+		94AED85510496DA500574BCA /* sparkle_public_key.pem in Resources */ = {isa = PBXBuildFile; fileRef = 94AED85210496DA500574BCA /* sparkle_public_key.pem */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		94AED7F21049676300574BCA /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				946F1EBC105C9B25005C1ADC /* Sparkle.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainMenu.xib; path = XIBs/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* MacdownAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacdownAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* MacdownAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacdownAppDelegate.m; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* Macdown_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macdown_Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* Macdown-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Macdown-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* Macdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Macdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		946F1C23105C8542005C1ADC /* SDWordCountValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDWordCountValueTransformer.h; path = Source/SDWordCountValueTransformer.h; sourceTree = "<group>"; };
+		946F1C24105C8542005C1ADC /* SDWordCountValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDWordCountValueTransformer.m; path = Source/SDWordCountValueTransformer.m; sourceTree = "<group>"; };
+		946F1C2C105C8755005C1ADC /* Markdown.pl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; name = Markdown.pl; path = Resources/Markdown.pl; sourceTree = "<group>"; };
+		946F1C50105C8CA3005C1ADC /* Context.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = Context.html; path = Resources/Context.html; sourceTree = "<group>"; };
+		946F1CF5105C9122005C1ADC /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
+		946F1D78105C94DF005C1ADC /* SDPreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPreferencesController.h; sourceTree = "<group>"; };
+		946F1D79105C94DF005C1ADC /* SDPreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPreferencesController.m; sourceTree = "<group>"; };
+		946F1DD8105C969B005C1ADC /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Frameworks/Sparkle.framework; sourceTree = "<group>"; };
+		946F1E5F105C99C2005C1ADC /* NSApplication+AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSApplication+AppInfo.h"; sourceTree = "<group>"; };
+		946F1E60105C99C2005C1ADC /* NSApplication+AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSApplication+AppInfo.m"; sourceTree = "<group>"; };
+		946F1E61105C99C2005C1ADC /* NSArray+UsefulStuff.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+UsefulStuff.h"; sourceTree = "<group>"; };
+		946F1E62105C99C2005C1ADC /* NSArray+UsefulStuff.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+UsefulStuff.m"; sourceTree = "<group>"; };
+		946F1E63105C99C2005C1ADC /* NSWindow+Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSWindow+Geometry.h"; sourceTree = "<group>"; };
+		946F1E64105C99C2005C1ADC /* NSWindow+Geometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSWindow+Geometry.m"; sourceTree = "<group>"; };
+		946F1E65105C99C2005C1ADC /* SDCommonAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCommonAppDelegate.h; sourceTree = "<group>"; };
+		946F1E66105C99C2005C1ADC /* SDCommonAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCommonAppDelegate.m; sourceTree = "<group>"; };
+		946F1E67105C99C2005C1ADC /* SDDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDDefines.h; sourceTree = "<group>"; };
+		946F1E68105C99C2005C1ADC /* SDDelayProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDDelayProxy.h; sourceTree = "<group>"; };
+		946F1E69105C99C2005C1ADC /* SDDelayProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDDelayProxy.m; sourceTree = "<group>"; };
+		946F1E6A105C99C2005C1ADC /* SDFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDFoundation.h; sourceTree = "<group>"; };
+		946F1E6B105C99C2005C1ADC /* SDFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDFoundation.m; sourceTree = "<group>"; };
+		946F1E6C105C99C2005C1ADC /* SDInsetTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDInsetTextField.h; sourceTree = "<group>"; };
+		946F1E6D105C99C2005C1ADC /* SDInsetTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDInsetTextField.m; sourceTree = "<group>"; };
+		946F1E70105C99C2005C1ADC /* SDToolkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDToolkit.h; sourceTree = "<group>"; };
+		946F1EB4105C9B04005C1ADC /* SDOldFashionedContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDOldFashionedContentView.h; sourceTree = "<group>"; };
+		946F1EB5105C9B04005C1ADC /* SDOldFashionedContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDOldFashionedContentView.m; sourceTree = "<group>"; };
+		94AED82210496AA100574BCA /* SDMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDMainWindowController.h; sourceTree = "<group>"; };
+		94AED82310496AA100574BCA /* SDMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDMainWindowController.m; sourceTree = "<group>"; };
+		94AED82F10496BD900574BCA /* SDGeneralPrefPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDGeneralPrefPane.h; path = Source/SDGeneralPrefPane.h; sourceTree = "<group>"; };
+		94AED83010496BD900574BCA /* SDGeneralPrefPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDGeneralPrefPane.m; path = Source/SDGeneralPrefPane.m; sourceTree = "<group>"; };
+		94AED84810496D6C00574BCA /* GeneralPrefPane.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GeneralPrefPane.xib; path = XIBs/GeneralPrefPane.xib; sourceTree = "<group>"; };
+		94AED84910496D6C00574BCA /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainWindow.xib; path = XIBs/MainWindow.xib; sourceTree = "<group>"; };
+		94AED85010496DA500574BCA /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = Credits.rtf; path = Resources/Credits.rtf; sourceTree = "<group>"; };
+		94AED85110496DA500574BCA /* DefaultValues.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DefaultValues.plist; path = Resources/DefaultValues.plist; sourceTree = "<group>"; };
+		94AED85210496DA500574BCA /* sparkle_public_key.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sparkle_public_key.pem; path = Resources/sparkle_public_key.pem; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				946F1CF6105C9122005C1ADC /* WebKit.framework in Frameworks */,
+				946F1DD9105C969B005C1ADC /* Sparkle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				946F1C66105C8E48005C1ADC /* Other crap */,
+				94AED83310496BEC00574BCA /* Controller */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				946F1DD8105C969B005C1ADC /* Sparkle.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				946F1CF5105C9122005C1ADC /* WebKit.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* Macdown.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Macdown */ = {
+			isa = PBXGroup;
+			children = (
+				946F1E5E105C99C2005C1ADC /* SDToolkit */,
+				94AED83210496BE200574BCA /* Preference Panes */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = Macdown;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3F00F4B6AF500CF3369 /* Macdown_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* Macdown-Info.plist */,
+				94AED85610496DA700574BCA /* Misc */,
+				94AED84010496D5C00574BCA /* XIBs */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		946F1C66105C8E48005C1ADC /* Other crap */ = {
+			isa = PBXGroup;
+			children = (
+				946F1C23105C8542005C1ADC /* SDWordCountValueTransformer.h */,
+				946F1C24105C8542005C1ADC /* SDWordCountValueTransformer.m */,
+			);
+			name = "Other crap";
+			sourceTree = "<group>";
+		};
+		946F1E5E105C99C2005C1ADC /* SDToolkit */ = {
+			isa = PBXGroup;
+			children = (
+				946F1E5F105C99C2005C1ADC /* NSApplication+AppInfo.h */,
+				946F1E60105C99C2005C1ADC /* NSApplication+AppInfo.m */,
+				946F1E61105C99C2005C1ADC /* NSArray+UsefulStuff.h */,
+				946F1E62105C99C2005C1ADC /* NSArray+UsefulStuff.m */,
+				946F1E63105C99C2005C1ADC /* NSWindow+Geometry.h */,
+				946F1E64105C99C2005C1ADC /* NSWindow+Geometry.m */,
+				946F1E65105C99C2005C1ADC /* SDCommonAppDelegate.h */,
+				946F1E66105C99C2005C1ADC /* SDCommonAppDelegate.m */,
+				946F1E67105C99C2005C1ADC /* SDDefines.h */,
+				946F1E68105C99C2005C1ADC /* SDDelayProxy.h */,
+				946F1E69105C99C2005C1ADC /* SDDelayProxy.m */,
+				946F1E6A105C99C2005C1ADC /* SDFoundation.h */,
+				946F1E6B105C99C2005C1ADC /* SDFoundation.m */,
+				946F1E6C105C99C2005C1ADC /* SDInsetTextField.h */,
+				946F1E6D105C99C2005C1ADC /* SDInsetTextField.m */,
+				946F1EB4105C9B04005C1ADC /* SDOldFashionedContentView.h */,
+				946F1EB5105C9B04005C1ADC /* SDOldFashionedContentView.m */,
+				946F1E70105C99C2005C1ADC /* SDToolkit.h */,
+			);
+			name = SDToolkit;
+			path = Frameworks/SDToolkit;
+			sourceTree = "<group>";
+		};
+		94AED83210496BE200574BCA /* Preference Panes */ = {
+			isa = PBXGroup;
+			children = (
+				94AED84810496D6C00574BCA /* GeneralPrefPane.xib */,
+				94AED82F10496BD900574BCA /* SDGeneralPrefPane.h */,
+				94AED83010496BD900574BCA /* SDGeneralPrefPane.m */,
+			);
+			name = "Preference Panes";
+			sourceTree = "<group>";
+		};
+		94AED83310496BEC00574BCA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				946F1D78105C94DF005C1ADC /* SDPreferencesController.h */,
+				946F1D79105C94DF005C1ADC /* SDPreferencesController.m */,
+				256AC3D80F4B6AC300CF3369 /* MacdownAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* MacdownAppDelegate.m */,
+				94AED82210496AA100574BCA /* SDMainWindowController.h */,
+				94AED82310496AA100574BCA /* SDMainWindowController.m */,
+			);
+			name = Controller;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		94AED84010496D5C00574BCA /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* MainMenu.xib */,
+				94AED84910496D6C00574BCA /* MainWindow.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+		94AED85610496DA700574BCA /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				946F1C2C105C8755005C1ADC /* Markdown.pl */,
+				94AED85010496DA500574BCA /* Credits.rtf */,
+				94AED85110496DA500574BCA /* DefaultValues.plist */,
+				94AED85210496DA500574BCA /* sparkle_public_key.pem */,
+				946F1C50105C8CA3005C1ADC /* Context.html */,
+			);
+			name = Misc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* Macdown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Macdown" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				94AED7F21049676300574BCA /* Copy Frameworks */,
+				94AED7F41049677000574BCA /* Strip Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Macdown;
+			productInstallPath = "$(HOME)/Applications";
+			productName = Macdown;
+			productReference = 8D1107320486CEB800E47090 /* Macdown.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Macdown" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Macdown */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* Macdown */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94AED83810496C1E00574BCA /* MainMenu.xib in Resources */,
+				94AED84A10496D6C00574BCA /* GeneralPrefPane.xib in Resources */,
+				94AED84B10496D6C00574BCA /* MainWindow.xib in Resources */,
+				94AED85310496DA500574BCA /* Credits.rtf in Resources */,
+				94AED85410496DA500574BCA /* DefaultValues.plist in Resources */,
+				94AED85510496DA500574BCA /* sparkle_public_key.pem in Resources */,
+				946F1C2D105C8755005C1ADC /* Markdown.pl in Resources */,
+				946F1C51105C8CA3005C1ADC /* Context.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		94AED7F41049677000574BCA /* Strip Headers */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Strip Headers";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "rm -f \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app\"/Contents/Frameworks/*/Versions/*/Headers/*";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* MacdownAppDelegate.m in Sources */,
+				94AED82410496AA100574BCA /* SDMainWindowController.m in Sources */,
+				94AED83110496BD900574BCA /* SDGeneralPrefPane.m in Sources */,
+				946F1C25105C8542005C1ADC /* SDWordCountValueTransformer.m in Sources */,
+				946F1D7A105C94DF005C1ADC /* SDPreferencesController.m in Sources */,
+				946F1E71105C99C2005C1ADC /* NSApplication+AppInfo.m in Sources */,
+				946F1E72105C99C2005C1ADC /* NSArray+UsefulStuff.m in Sources */,
+				946F1E73105C99C2005C1ADC /* NSWindow+Geometry.m in Sources */,
+				946F1E74105C99C2005C1ADC /* SDCommonAppDelegate.m in Sources */,
+				946F1E75105C99C2005C1ADC /* SDDelayProxy.m in Sources */,
+				946F1E76105C99C2005C1ADC /* SDFoundation.m in Sources */,
+				946F1E77105C99C2005C1ADC /* SDInsetTextField.m in Sources */,
+				946F1EB6105C9B04005C1ADC /* SDOldFashionedContentView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/Library/Xcode/Project Templates/Application/SDToolkit Application/Cocoa Application/Frameworks\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Macdown_Prefix.pch;
+				INFOPLIST_FILE = "Macdown-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Macdown;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/Library/Xcode/Project Templates/Application/SDToolkit Application/Cocoa Application/Frameworks\"",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Frameworks\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Macdown_Prefix.pch;
+				INFOPLIST_FILE = "Macdown-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = Macdown;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				FRAMEWORK_SEARCH_PATHS = Frameworks;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Macdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Macdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
