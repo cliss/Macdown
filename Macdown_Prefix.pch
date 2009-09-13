@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'Macdown' target in the 'Macdown' project
+//
+
+#ifdef __OBJC__
+	#import <Cocoa/Cocoa.h>
+	#import "SDToolkit.h"
+#endif
