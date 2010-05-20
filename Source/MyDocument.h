@@ -19,4 +19,6 @@
 	NSString *str;
 }
 
+- (IBAction)copySource:(id)sender;
+
 @end

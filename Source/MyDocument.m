@@ -10,6 +10,12 @@
 
 static NSString *kSDMarkdownFileType = @"MarkdownFile";
 
+@interface MyDocument (PrivateMethods)
+
+- (NSString*) convertedStringUsingMarkdown;
+
+@end
+
 @implementation MyDocument
 
 - (id)init {
@@ -36,15 +42,25 @@ static NSString *kSDMarkdownFileType = @"MarkdownFile";
 - (void)windowControllerDidLoadNib:(NSWindowController *) aController {
 	[super windowControllerDidLoadNib:aController];
 	
-	[textView setTextContainerInset:NSMakeSize(10, 10)];
+	[textView setTextContainerInset:NSMakeSize(0, 10)];
 	[textView setFont:[NSFont fontWithName:@"Monaco" size:11.0]];
 	
 	[[aController window] setContentBorderThickness:24.0 forEdge:NSMinYEdge];
 }
 
-- (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError {
-	if ([typeName isEqualToString: kSDMarkdownFileType])
+- (NSData *)dataOfType:(NSString *)typeName error:(NSError **)outError 
+{
+	NSLog(@"Getting data of type %@.", typeName);
+	if ([typeName isEqualToString:kSDMarkdownFileType])
+	{
 		return [str dataUsingEncoding:NSUTF8StringEncoding];
+	}
+	else if ([typeName isEqualToString:@"NSHTMLTextDocumentType"])
+	{
+		return [[NSString stringWithFormat:@"<html><body>%@</body></html>", [self convertedStringUsingMarkdown]] dataUsingEncoding:NSUTF8StringEncoding];
+
+	}
+
 	
 	if (outError)
 		*outError = [NSError errorWithDomain:NSOSStatusErrorDomain code:unimpErr userInfo:NULL];
@@ -114,6 +130,13 @@ static NSString *kSDMarkdownFileType = @"MarkdownFile";
 	[listener ignore];
 	
 	[[NSWorkspace sharedWorkspace] openURL:[request URL]];
+}
+
+- (IBAction)copySource:(id)sender
+{
+	//[[NSPasteboard generalPasteboard] clearContents];
+	[[NSPasteboard generalPasteboard] declareTypes:[NSArray arrayWithObject:NSStringPboardType] owner:nil];
+	[[NSPasteboard generalPasteboard] setData:[[self convertedStringUsingMarkdown] dataUsingEncoding:NSUTF8StringEncoding] forType:NSStringPboardType];
 }
 
 @end
